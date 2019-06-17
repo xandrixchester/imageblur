@@ -21,8 +21,6 @@ class Image
     @image.each_with_index do |row, row_num|
       row.each_with_index do |item, col_num|
 
-# anytime youre checking if something is true/false use ==
-# otherwise it will always return true
 
         ones_coord.each do |ones_row_num, ones_col_num|
           if row_num == ones_row_num and col_num == ones_col_num
@@ -37,8 +35,7 @@ class Image
     end
   end
 
-# how to find the location of the 1s in an image
-# each_with_index goes through an array and list both the value and place in an array, could prove useful
+
 
   def find_ones
 
